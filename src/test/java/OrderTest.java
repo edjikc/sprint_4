@@ -4,6 +4,7 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import org.openqa.selenium.firefox.FirefoxDriver;
 import ru.yandex.practicum.pages.HomePage;
 import ru.yandex.practicum.pages.OrderPage;
 
@@ -15,7 +16,7 @@ public class OrderTest {
     @Before
     public void setupDriver(){
 
-        driver = new ChromeDriver();
+        driver = new FirefoxDriver();
         homePage = new HomePage(driver);
         orderPage = new OrderPage(driver);
         driver.get("https://qa-scooter.praktikum-services.ru/");
